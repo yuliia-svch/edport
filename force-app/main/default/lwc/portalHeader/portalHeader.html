@@ -1,0 +1,30 @@
+<template>
+    <div class="slds-grid slds-grid_vertical-align-center">
+		<div class="slds-size_10-of-12">
+            <div class="slds-grid slds-grid_vertical-align-center">
+                <div class="slds-size_1-of-8">
+                    <a href="/education">
+                        <img class="logo" src={logoURL}/>
+                    </a>
+                </div>
+        
+                <div class="slds-size_7-of-8" if:true={menuLinks}>
+                    <ul class="navbar-nav left-menu">
+                        <li class="nav-item active">
+                            <a class="nav-link" onclick={navigateToHome}>Home</a>
+                        </li>
+                        <template for:each={menuLinks} for:item="link">
+                            <li key={link.label} class="nav-item">
+                                <a class="nav-link" href={link.url}>{link.label}</a>
+                            </li>
+                        </template>
+                    </ul>
+                </div>
+            </div>
+		</div>
+
+		<div class="slds-size_2-of-12 slds-grid slds-grid_vertical-align-center slds-grid_align-center">
+            <lightning-button value="logout" label="Log out" onclick={logout}></lightning-button>
+		</div>
+	</div>
+</template>
