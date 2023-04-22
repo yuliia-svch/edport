@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "d5d7617e-da1d-48dd-9cfa-46e6ea215a77",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "530cf2ca-492d-415e-8266-cc0c58392f8c",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Lecture_List_Record_List_1_Component",
+  "id" : "f61fcf3b-286b-4866-b36e-496dbab99fc0",
+  "type" : "experienceVariation"
+}

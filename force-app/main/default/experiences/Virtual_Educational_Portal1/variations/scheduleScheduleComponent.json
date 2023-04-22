@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "a2d391e0-fe74-4720-beca-5ff1b6824ff2",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "a1b446c2-f8e3-4725-b53e-624d31b227a0",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "schedule_Schedule_Component",
+  "id" : "6b96de8e-40f9-4ba5-ab86-8a540e003b95",
+  "type" : "experienceVariation"
+}

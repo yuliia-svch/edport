@@ -1,0 +1,57 @@
+{
+  "appPageId" : "3b257c60-4b46-4110-982d-03d264f61faa",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "1970c5b0-3a5d-46ce-88b8-fa84df2e64e9",
+  "label" : "schedule",
+  "regions" : [ {
+    "id" : "cb395202-62ac-48ef-b7c0-6b6cc500ccd7",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "audience" : "Teacher"
+      },
+      "componentName" : "c:schedule",
+      "id" : "a1b446c2-f8e3-4725-b53e-624d31b227a0",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "audience" : "Student"
+      },
+      "componentName" : "c:schedule",
+      "id" : "dd6e95cc-3c62-4afa-bf34-3ad369849ae6",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "88314519-f0cd-4a83-a18e-e00cf13431e4",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "2dd2a4d3-54ef-4064-b717-85768252468a",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "schedule"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "5f827787-c5ae-473f-ab1f-090b3f088765",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "85c2ad2c-5261-470f-9332-0ebd184791ac",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-schedule"
+}

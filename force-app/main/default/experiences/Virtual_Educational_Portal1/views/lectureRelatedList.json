@@ -1,0 +1,39 @@
+{
+  "appPageId" : "3b257c60-4b46-4110-982d-03d264f61faa",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "7e973810-224b-4519-b6e0-158c3fab7315",
+  "label" : "Lecture Related List",
+  "regions" : [ {
+    "id" : "b4abf96e-0341-4443-91f6-09db9462a303",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customTitle" : "",
+        "parentRecordId" : "{!recordId}",
+        "relatedListName" : "{!relationshipApiName}",
+        "showBreadCrumbs" : true,
+        "showCustomTitle" : false,
+        "showManualRefreshButton" : true,
+        "showRowNumbers" : true
+      },
+      "componentName" : "forceCommunity:relatedList",
+      "id" : "0fb70721-c787-493d-83aa-3ead1726c7a0",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f39eb9db-89d6-426f-bfc3-f57239ee31d0",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "9bb6ff04-1001-420a-bfd7-2fbe007cc160",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "relatedlist-a05"
+}

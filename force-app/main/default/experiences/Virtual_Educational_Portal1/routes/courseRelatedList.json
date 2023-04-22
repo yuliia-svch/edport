@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "ebdf14d7-3d61-4fd8-bd17-cb182e6ce793",
+  "appPageId" : "3b257c60-4b46-4110-982d-03d264f61faa",
+  "configurationTags" : [ ],
+  "id" : "f653b39e-a086-48d7-876d-efe54aa7360b",
+  "label" : "Course Related List",
+  "objectApiName" : "Course__c",
+  "routeType" : "relatedlist-a04",
+  "type" : "route",
+  "urlPrefix" : "course"
+}

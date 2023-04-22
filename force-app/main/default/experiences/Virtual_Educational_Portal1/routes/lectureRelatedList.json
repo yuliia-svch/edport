@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "7e973810-224b-4519-b6e0-158c3fab7315",
+  "appPageId" : "3b257c60-4b46-4110-982d-03d264f61faa",
+  "configurationTags" : [ ],
+  "id" : "96cc435b-f78f-4d12-9553-f72a0890dc5b",
+  "label" : "Lecture Related List",
+  "objectApiName" : "Lecture__c",
+  "routeType" : "relatedlist-a05",
+  "type" : "route",
+  "urlPrefix" : "lecture"
+}

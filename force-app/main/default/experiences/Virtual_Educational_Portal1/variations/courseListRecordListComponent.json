@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "a3831988-b99b-4e87-b8fc-3a20ad24b431",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "9b87ac15-cbea-4b1c-a3af-561a96edd118",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Course_List_Record_List_Component",
+  "id" : "21a40998-4c82-4921-9d26-48648fdc2370",
+  "type" : "experienceVariation"
+}

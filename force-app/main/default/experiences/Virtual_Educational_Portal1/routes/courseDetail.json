@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "b415d03a-8d4e-4444-9dcd-8347438587cd",
+  "appPageId" : "3b257c60-4b46-4110-982d-03d264f61faa",
+  "configurationTags" : [ ],
+  "id" : "745992b0-a6fd-4c82-9985-91ac22739f38",
+  "label" : "Course Detail",
+  "objectApiName" : "Course__c",
+  "routeType" : "detail-a04",
+  "type" : "route",
+  "urlPrefix" : "course"
+}
