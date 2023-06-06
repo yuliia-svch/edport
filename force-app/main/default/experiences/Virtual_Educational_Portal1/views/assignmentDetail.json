@@ -1,24 +1,25 @@
 {
   "appPageId" : "3b257c60-4b46-4110-982d-03d264f61faa",
-  "componentName" : "siteforce:sldsOneColLayout",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
   "dataProviders" : [ ],
-  "id" : "024466dc-2136-4e04-bd75-7e3b049c7eb6",
-  "label" : "Lecture Detail",
+  "id" : "7f73a8e6-62aa-4355-ba2b-6b8cfb5830d3",
+  "label" : "Assignment Detail",
   "regions" : [ {
-    "id" : "54486ae5-ef54-4159-9cb6-5a50d35908ed",
-    "regionName" : "header",
-    "type" : "region"
-  }, {
     "components" : [ {
       "componentAttributes" : {
         "recordId" : "{!recordId}"
       },
       "componentName" : "forceCommunity:recordHeadline",
-      "id" : "8d798092-c131-42f4-81ed-4905f9274cd1",
+      "id" : "616d398c-be11-40d7-8c8d-df27c75c6973",
       "renderPriority" : "NEUTRAL",
       "renditionMap" : { },
       "type" : "component"
-    }, {
+    } ],
+    "id" : "c4953a07-5621-4e25-a89e-07b0fe11be09",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
       "componentAttributes" : {
         "detailsTabLabel" : "Details",
         "discussionsTabLabel" : "Feed",
@@ -32,7 +33,7 @@
         "timelineTabLabel" : "Activity"
       },
       "componentName" : "forceCommunity:recordHomeTabs",
-      "id" : "e507c589-de28-4ab9-825c-1ab78c22f2f2",
+      "id" : "cb576ca0-7186-4aba-b480-0b23be0ab37e",
       "renderPriority" : "NEUTRAL",
       "renditionMap" : { },
       "type" : "component"
@@ -41,7 +42,7 @@
         "recordId" : "{!recordId}"
       },
       "componentName" : "c:uploadFiles",
-      "id" : "75b2d928-f6b3-4ac1-a729-95175967dcd0",
+      "id" : "6f3e50ac-707e-40e2-a73f-ec082b273026",
       "renderPriority" : "NEUTRAL",
       "renditionMap" : { },
       "type" : "component"
@@ -51,16 +52,16 @@
         "showUpload" : true
       },
       "componentName" : "c:uploadFiles",
-      "id" : "6fe9db3a-570e-4f57-8319-b45bde0ecd86",
+      "id" : "9e0610bc-de13-43d6-bda3-b62d0fc85a57",
       "renderPriority" : "NEUTRAL",
       "renditionMap" : { },
       "type" : "component"
     } ],
-    "id" : "9d03cfec-0815-4baa-bccc-cc6c6f7c5793",
+    "id" : "60625f20-157b-4601-a270-69ad1fc4ce18",
     "regionName" : "content",
     "type" : "region"
   }, {
-    "id" : "e6f22b37-c46f-4ed1-836b-8c4bae17f9c2",
+    "id" : "5e6762b2-a193-47d2-8908-9f36efa71c0c",
     "regionName" : "footer",
     "type" : "region"
   }, {
@@ -71,15 +72,31 @@
         "title" : "{!Record._Object}: {!Record._Title}"
       },
       "componentName" : "forceCommunity:seoAssistant",
-      "id" : "a66da48a-df9f-4d60-9e29-e9498370fe52",
+      "id" : "927fd806-6120-4548-b6dd-e13c2ec532d6",
       "renditionMap" : { },
       "type" : "component"
     } ],
-    "id" : "06df3164-7b88-4d9f-b32f-dbc3213ba88c",
+    "id" : "c7a1a4a1-7c34-4037-8427-0d1b1f691e2a",
     "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "relatedListApiName" : "Assignments__r",
+        "relatedListComponentOverride" : "GRID",
+        "width" : "MEDIUM"
+      },
+      "componentName" : "forceCommunity:responsiveRelatedListSingle",
+      "id" : "9fa19e90-b1ba-4afd-adc2-9c20b9d996af",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "2c46abb9-68f9-4202-ac86-938282895277",
+    "regionName" : "sidebar",
     "type" : "region"
   } ],
   "themeLayoutType" : "Inner",
   "type" : "view",
-  "viewType" : "detail-a05"
+  "viewType" : "detail-a06"
 }

@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "0bb07558-5591-4d66-9563-ce84d253b837",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "5dd0b17e-d8a1-478c-98ac-990ea7ec51fb",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Home_teacherEvents_Component",
+  "id" : "fdce4dca-e1e8-4ed6-ba78-de4c4652a41d",
+  "type" : "experienceVariation"
+}

@@ -1,0 +1,15 @@
+{
+  "componentVariants" : [ {
+    "id" : "69565d23-8fb7-4bfc-89eb-2633bfd13164",
+    "propertyOverrides" : {
+      "componentAttributes" : {
+        "NavigationMenuEditorRefresh" : "Teacher_Menu"
+      }
+    },
+    "targetId" : "f1c058c7-7366-4fae-9848-423d249eeadf",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Default_Navigation_Menu_1_Component_Properties",
+  "id" : "c4290d16-137b-4f53-b1d3-f8f34fe99f1b",
+  "type" : "experienceVariation"
+}

@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "2c7a3d85-c36b-44ec-aa6c-c42848a21232",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "fa97e709-e2f0-45d7-bff8-d6a7397235b6",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Home_Create_Record_Button_1_Component",
+  "id" : "409d1003-b98e-4fad-b0e4-ff2080d5d498",
+  "type" : "experienceVariation"
+}

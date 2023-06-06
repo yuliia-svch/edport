@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "9884a054-92da-4808-b217-b82d39f8f953",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "75b2d928-f6b3-4ac1-a729-95175967dcd0",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Lecture_Detail_uploadFiles_1_Component",
+  "id" : "7e61f681-e290-48fb-ab4d-db629fcfc18d",
+  "type" : "experienceVariation"
+}

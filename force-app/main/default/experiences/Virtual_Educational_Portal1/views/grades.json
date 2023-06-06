@@ -1,0 +1,54 @@
+{
+  "appPageId" : "3b257c60-4b46-4110-982d-03d264f61faa",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "c729a40e-76fa-4483-a8a1-ed4206b3c35a",
+  "label" : "Grades",
+  "regions" : [ {
+    "id" : "76f383c7-f967-4ba8-aa7b-10ec179af9f1",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "f7568bec-2f7d-49b4-93a5-669fffbb5c1b",
+    "regionName" : "featured",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:gradeList",
+      "id" : "2572add7-73d3-48e6-b069-43815a0b81d2",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "754c573a-c8b2-47e8-a5ce-b50ce7cccaa5",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "aa9433dd-92a9-43bf-a5a3-3950b1333957",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "ebc51a22-5bb3-4e57-8fc7-65521ad6c1fa",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Grades"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "9532c8ed-17d4-4e82-adac-8cb1c208d73e",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "22861a54-d3dc-4b8a-9053-1f8194820add",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-grades"
+}

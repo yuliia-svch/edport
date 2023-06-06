@@ -1,6 +1,6 @@
 {
   "activeBrandingSetId" : "452d8ba5-4406-4de1-90ad-d45e10421963",
-  "customCSS" : "",
+  "customCSS" : ".cCenterPanel {   \n   min-height: calc(84vh - 142px);\n}",
   "developerName" : "cpt",
   "id" : "cf037cbf-cf84-4f09-a4d9-e0ad78bd117f",
   "label" : "Customer Account Portal",
@@ -33,15 +33,24 @@
     "componentAttributes" : {
       "IsDefaultHeaderHidden" : false,
       "IsDefaultHeaderPositionFixed" : false,
-      "IsDefaultNotificationsHidden" : false,
+      "IsDefaultNotificationsHidden" : true,
       "IsSearchBarHidden" : false,
-      "fixedPageWidth" : 1400,
+      "fixedPageWidth" : 1399,
       "isPageWidthFixed" : true
     },
     "componentName" : "siteforce:cptBody",
     "id" : "36826565-3d0c-40dd-9ea1-aad3d5c267cc",
     "label" : "Default",
     "regions" : [ {
+      "components" : [ {
+        "componentAttributes" : {
+          "richTextValue" : "<p style=\"text-align: center;\"><span style=\"color: rgb(0, 97, 0);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.edport1.1}\" style=\"width: 66.1094px; height: 66.1094px;\"></span></p>\n<p style=\"text-align: center;\"><span style=\"font-size: 36px;\">Virtual Educational Portal</span></p>"
+        },
+        "componentName" : "forceCommunity:richTextInline",
+        "id" : "0e217664-decd-4bb8-acc6-46c0ff64d07b",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
       "id" : "c1584307-2ff6-44ce-af4e-a63aa9541dd6",
       "regionName" : "customHeader",
       "type" : "region"
@@ -113,6 +122,15 @@
       "regionName" : "customRegion",
       "type" : "region"
     }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "richTextValue" : "<div style=\"text-align: center; background-color:#02644e;\">\n<div><strong><span style=\"font-size:16px;\"><span style=\"font-family:Times New Roman,Times New Roman,Times,serif;\"><span style=\"color:#ffffff;\">Virtual Educational Platform</span></span></span><br/>\n<br />\n<span style=\"color:#ffffff;\">Managed by:</span>\n<span style=\"color:#ffffff;\">Yuliia Savchenko</span></strong><br />\n&nbsp;</div>\n<strong><span style=\"color:#ffffff;\">Phone:&nbsp;</span>\n<span style=\"color:#ffffff;\">093-1403-991</span><br />\n<span style=\"color:#ffffff;\">Email:&nbsp;</span>\n<span style=\"color:#ffffff;\">yuliia.savchenko.pz.2019@lpnu.ua</span></strong>\n</div>"
+        },
+        "componentName" : "forceCommunity:htmlBlock",
+        "id" : "5e6c627c-9792-4733-a3b0-db5f9c9d0b47",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
       "id" : "e0a3d097-7b11-4af6-9240-18c833032259",
       "regionName" : "footer",
       "type" : "region"

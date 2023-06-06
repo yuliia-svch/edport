@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "7b2055b1-5c20-4411-a9f3-6745a0deeaf9",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "6cf925f6-8427-497f-80bb-d46753cd4dcb",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Home_Student_Today_Events_Component",
+  "id" : "b1df1562-2482-430a-91eb-88688e11a04b",
+  "type" : "experienceVariation"
+}

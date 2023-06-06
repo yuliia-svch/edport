@@ -1,7 +1,7 @@
 {
   "cmsSettings" : { },
   "currentThemeId" : "cf037cbf-cf84-4f09-a4d9-e0ad78bd117f",
-  "headMarkup" : null,
+  "headMarkup" : "<style>\n    .forceCommunityCreateRecordButton button, .forceCommunityCreateRecordButton .triggerLink {\n        background-color: #02644e !important;\n        border-radius: 20px !important;\n    }\n</style>",
   "id" : "3b257c60-4b46-4110-982d-03d264f61faa",
   "isLockerServiceEnabled" : true,
   "isRelaxedCSPLevel" : false,

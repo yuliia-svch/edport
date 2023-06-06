@@ -1,14 +1,10 @@
 {
   "appPageId" : "3b257c60-4b46-4110-982d-03d264f61faa",
-  "componentName" : "siteforce:sldsOneColLayout",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
   "dataProviders" : [ ],
   "id" : "b415d03a-8d4e-4444-9dcd-8347438587cd",
   "label" : "Course Detail",
   "regions" : [ {
-    "id" : "bbead6fd-f34b-4550-a86a-e4d26155ec6c",
-    "regionName" : "header",
-    "type" : "region"
-  }, {
     "components" : [ {
       "componentAttributes" : {
         "recordId" : "{!recordId}"
@@ -18,7 +14,12 @@
       "renderPriority" : "NEUTRAL",
       "renditionMap" : { },
       "type" : "component"
-    }, {
+    } ],
+    "id" : "bbead6fd-f34b-4550-a86a-e4d26155ec6c",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
       "componentAttributes" : {
         "detailsTabLabel" : "Details",
         "discussionsTabLabel" : "Feed",
@@ -26,8 +27,8 @@
         "relatedTabLabel" : "Related",
         "showLegacyActivityComposer" : false,
         "tab1Type" : "details",
-        "tab2Type" : "related",
-        "tab3Type" : "chatter",
+        "tab2Type" : "none",
+        "tab3Type" : "none",
         "tab4Type" : "none",
         "timelineTabLabel" : "Activity"
       },
@@ -58,6 +59,33 @@
     } ],
     "id" : "0be3242e-a649-4ecb-9ea1-7c20b88cc59c",
     "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "relatedListApiName" : "Lectures__r",
+        "relatedListComponentOverride" : "GRID",
+        "width" : "MEDIUM"
+      },
+      "componentName" : "forceCommunity:responsiveRelatedListSingle",
+      "id" : "35a06b96-f915-4781-a455-d38cd013b1df",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "relatedListApiName" : "Assignments__r",
+        "relatedListComponentOverride" : "GRID",
+        "width" : "MEDIUM"
+      },
+      "componentName" : "forceCommunity:responsiveRelatedListSingle",
+      "id" : "1e11ed22-befc-4536-8f7b-f7b769c0b093",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "38779cbe-8ca2-4191-bb99-7f5dbe175717",
+    "regionName" : "sidebar",
     "type" : "region"
   } ],
   "themeLayoutType" : "Inner",

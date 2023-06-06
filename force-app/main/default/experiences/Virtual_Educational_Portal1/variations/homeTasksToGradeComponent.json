@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "d51d8290-035c-4e64-ad89-1b3907687815",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "b3e11f4e-7bc4-4cec-9e0c-39cdef61b80a",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Home_Tasks_to_Grade_Component",
+  "id" : "4ba22bf2-9f9d-496f-98f3-84f4fda18c52",
+  "type" : "experienceVariation"
+}

@@ -9,10 +9,92 @@
     "regionName" : "header",
     "type" : "region"
   }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:teacherEvents",
+      "id" : "5dd0b17e-d8a1-478c-98ac-990ea7ec51fb",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "c:studentTodayEvents",
+      "id" : "6cf925f6-8427-497f-80bb-d46753cd4dcb",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "c:assignmentsDue",
+      "id" : "07afaa0b-faa4-42e5-8871-a577e7b6d793",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "c:tasksToGrade",
+      "id" : "b3e11f4e-7bc4-4cec-9e0c-39cdef61b80a",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
     "id" : "af6d454e-a08a-4614-b40b-11c30336d872",
     "regionName" : "content",
     "type" : "region"
   }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "actions" : [ {
+          "isPublic" : false,
+          "name" : "NewLecture"
+        } ],
+        "label" : "New Lecture"
+      },
+      "componentName" : "forceCommunity:createRecordButton",
+      "id" : "916c1b59-236b-48db-9f8e-7db35ed36f09",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "actions" : [ {
+          "isPublic" : false,
+          "name" : "NewPracticalWork"
+        } ],
+        "label" : "New Practical Work"
+      },
+      "componentName" : "forceCommunity:createRecordButton",
+      "id" : "fa97e709-e2f0-45d7-bff8-d6a7397235b6",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "actions" : [ {
+          "isPublic" : false,
+          "name" : "NewLabWork"
+        } ],
+        "label" : "New Laboratory Work"
+      },
+      "componentName" : "forceCommunity:createRecordButton",
+      "id" : "442ee61b-e2a3-4b4f-af1f-4291b64dbdda",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "actions" : [ {
+          "isPublic" : false,
+          "name" : "TurnInTask"
+        } ],
+        "label" : "Turn in the assignment"
+      },
+      "componentName" : "forceCommunity:createRecordButton",
+      "id" : "cf30c563-1b93-42fb-be58-72dd6d312dbd",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
     "id" : "fcf7d396-4786-4241-b546-10f8af70f606",
     "regionName" : "sidebar",
     "type" : "region"

@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "c729a40e-76fa-4483-a8a1-ed4206b3c35a",
+  "appPageId" : "3b257c60-4b46-4110-982d-03d264f61faa",
+  "configurationTags" : [ ],
+  "id" : "96287f3c-bcf5-4f6f-b01c-329ef7e74c75",
+  "label" : "Grades",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-grades",
+  "type" : "route",
+  "urlPrefix" : "grades"
+}

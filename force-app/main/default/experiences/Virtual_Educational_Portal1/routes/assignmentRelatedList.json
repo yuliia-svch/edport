@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "8a04e48d-c94b-4f34-a375-848ab1e389fd",
+  "appPageId" : "3b257c60-4b46-4110-982d-03d264f61faa",
+  "configurationTags" : [ ],
+  "id" : "eb7871d2-6558-4570-a3e4-0f461ae8ab03",
+  "label" : "Assignment Related List",
+  "objectApiName" : "Assignment__c",
+  "routeType" : "relatedlist-a06",
+  "type" : "route",
+  "urlPrefix" : "assignment"
+}
