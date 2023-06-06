@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0C9761</headerColor>
+        <logo>edport</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Educational Portal</label>
+    <navType>Standard</navType>
+    <tabs>standard-home</tabs>
+    <tabs>Course__c</tabs>
+    <tabs>Lecture__c</tabs>
+    <tabs>Assignment__c</tabs>
+    <tabs>Group_Course__c</tabs>
+    <tabs>Group__c</tabs>
+    <tabs>Task__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Educational_Portal_UtilityBar</utilityBar>
+</CustomApplication>
