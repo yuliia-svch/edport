@@ -1,0 +1,47 @@
+<template>
+    <div style="min-height:15rem">
+        <div class="slds-text-heading_medium">
+            Today's Classes:
+        </div>
+        <div if:false={events.length} class="slds-align_absolute-center slds-text-align_center" style="display:block;">
+            <img class="slds-illustration__svg slds-m-bottom__large" style="width: 50%" src={imageUrl}/>
+            <div class="slds-m-top_medium">
+                No classes for today.
+            </div>
+        </div>
+        <template if:true={events.length}>
+            <table class="slds-table slds-table_bordered slds-table_striped slds-table_fixed-layout">
+                <thead>
+                    <tr>
+                        <th style="background-color:rgb(213, 213, 213)">Name</th>
+                        <th style="background-color:rgb(213, 213, 213)">Type</th>
+                        <th style="background-color:rgb(213, 213, 213)">Start - End</th>
+                        <th style="background-color:rgb(213, 213, 213)">Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={events} for:item="event">
+                        <tr key={event.id}>
+                            <td class="slds-truncate">
+                                <a href={event.recordLink}>{event.name}</a>
+                            </td>
+                            <td>
+                                {event.type}
+                            </td>
+                            <td>
+                                <lightning-formatted-date-time value={event.startTime} year="numeric" month="numeric" day="numeric" time-zone="Europe/Dublin"></lightning-formatted-date-time>
+                                ,&nbsp;
+                                <lightning-formatted-date-time value={event.startTime} hour="2-digit" minute="2-digit" time-zone="Europe/Dublin"></lightning-formatted-date-time>
+                                &nbsp;-&nbsp;
+                                <lightning-formatted-date-time value={event.endTime} hour="2-digit" minute="2-digit" time-zone="Europe/Dublin"></lightning-formatted-date-time>
+                            </td>
+                            <td class="slds-truncate">
+                                <a href={event.link} target="_blank">{event.link}</a>
+                            </td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </template>
+    </div>
+</template>

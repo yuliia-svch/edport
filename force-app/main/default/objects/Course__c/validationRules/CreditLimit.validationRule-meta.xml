@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CreditLimit</fullName>
+    <active>true</active>
+    <errorConditionFormula>Credits__c &gt; 10</errorConditionFormula>
+    <errorDisplayField>Credits__c</errorDisplayField>
+    <errorMessage>Number of credits cannot exceed 10.</errorMessage>
+</ValidationRule>

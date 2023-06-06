@@ -1,0 +1,46 @@
+<template>
+    <div class="slds-m-around_medium">
+        Attached Files:
+        <template if:true={files.length}>
+            <table class="slds-table slds-table_bordered slds-table_striped" style="max-width:50%">
+                <thead>
+                    <tr>
+                        <th style="background-color:rgb(213, 213, 213)">Name</th>
+                        <th style="background-color:rgb(213, 213, 213)"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={files} for:item="file">
+                        <tr key={file.link}>
+                            <td>
+                                <a href={file.link} target="_blank">{file.name}</a>
+                            </td>
+                            <td>
+                                <template if:true={showUpload}>
+                                    <lightning-button-icon icon-name="utility:delete" 
+                                                            alternative-text="Delete"
+                                                            data-id={file.fileId}
+                                                            class="slds-float_right" 
+                                                            title="Delete" 
+                                                            onclick={deleteFile}></lightning-button-icon>
+                                </template>
+                            </td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </template>
+        <div if:false={files.length}>
+            No files attached.
+        </div>
+        <template if:true={showUpload}>
+            <lightning-file-upload
+                label="File"
+                name="fileUploader"
+                record-id={recordId}
+                onuploadfinished={handleUploadFinished}
+                multiple
+            ></lightning-file-upload>
+        </template>
+    </div>
+</template>

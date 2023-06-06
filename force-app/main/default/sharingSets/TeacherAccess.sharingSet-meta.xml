@@ -12,6 +12,12 @@
         <objectField>Teacher__c</objectField>
         <userField>Contact</userField>
     </accessMappings>
+    <accessMappings>
+        <accessLevel>Read</accessLevel>
+        <object>Task__c</object>
+        <objectField>Assignment__c.Teacher__c</objectField>
+        <userField>Contact</userField>
+    </accessMappings>
     <name>Teacher Access</name>
     <profiles>educational portal - teacher</profiles>
 </SharingSet>

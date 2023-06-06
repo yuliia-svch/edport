@@ -1,0 +1,32 @@
+<template>
+            <lightning-accordion allow-multiple-sections-open>
+                <template for:each={gradeList} for:item="course">
+                    <lightning-accordion-section key={course.courseName} name={course.courseName} label={course.courseName}>
+                        <table class="slds-table slds-table_bordered slds-table_striped">
+                            <thead>
+                                <tr>
+                                    <th style="background-color:rgb(213, 213, 213)">Assignment</th>
+                                    <th style="background-color:rgb(213, 213, 213)">Grade</th>
+                                    <th style="background-color:rgb(213, 213, 213)">Maximum</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template for:each={course.assignmentGrades} for:item="item">
+                                    <tr key={item.assignmentName}>
+                                        <td>
+                                            {item.assignmentName}
+                                        </td>
+                                        <td>
+                                            {item.grade}
+                                        </td>
+                                        <td>
+                                            {item.maximum}
+                                        </td>
+                                    </tr>
+                                </template>
+                            </tbody>
+                        </table>
+                    </lightning-accordion-section>
+                </template>
+            </lightning-accordion>
+</template>

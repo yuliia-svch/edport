@@ -22,8 +22,24 @@ export default class Schedule extends LightningElement {
 	currentEventName;
 	mode;
 
-	connectedCallback() {
-		this.refresh();
+	renderedCallback() {
+		getScheduleData({audience: this.audience})
+		.then(response => {
+			this.events = response;
+			this.events.forEach(event => {
+				this.eventsToDisplay.push({ 
+					Id : event.id, 
+					title : event.name, 
+					start : event.startTime,
+					end : event.endTime,
+					allDay : false
+				});
+			});
+			this.eventsToDisplay = JSON.parse(JSON.stringify(this.eventsToDisplay));
+			this.renderCalendar();
+		}).catch(error => {
+			Util.showToast(this, Util.parseError(error), Util.TOAST_VARIANTS.ERROR);
+		})
 	}
 
 	@wire(getRecord, { recordId: Id, fields: [ContactId, ProfileName] })
@@ -58,17 +74,13 @@ export default class Schedule extends LightningElement {
 				});
 			});
 			this.eventsToDisplay = JSON.parse(JSON.stringify(this.eventsToDisplay));
-			this.renderCalendar();
+			this.initialiseCalendarJs();
 		}).catch(error => {
 			Util.showToast(this, Util.parseError(error), Util.TOAST_VARIANTS.ERROR);
 		})
 	}
 
 	renderCalendar() {
-		if (this.jsInitialised) {
-			return;
-		}
-		this.jsInitialised = true;
 
 		Promise.all([
 			loadScript(this, FullCalendarJS + '/fullcalendar-3.10.0/lib/jquery.min.js'),
@@ -110,8 +122,6 @@ export default class Schedule extends LightningElement {
 				let task = that.events.find(x => x.id == info.Id);
 				that.currentEventId = info.Id;
 				that.currentEventName = task.type === 'Lecture'? 'Lecture__c' : 'Assignment__c';
-				console.log(that.currentEventId);
-				console.log(that.currentEventName);
 				that.mode = (that.userContactId === task.teacherId || that.userProfileName === 'System Administrator')? 'edit' : 'view';
 				that.openModal = true;
 			}

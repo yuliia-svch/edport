@@ -15,8 +15,8 @@ public with sharing class ScheduleController {
 					event.id = lecture.Id;
 					event.name = lecture.Name;
 					event.link = lecture.ConferenceLink__c;
-					event.startTime = lecture.StartTime__c;
-					event.endTime = lecture.EndTime__c;
+					event.startTime = lecture.StartTime__c?.addHours(1);
+					event.endTime = lecture.EndTime__c?.addHours(1);
 					event.teacherName = lecture.Teacher__r.Name;
 					event.teacherId = lecture.Teacher__c;
 					event.type = 'Lecture';
@@ -27,15 +27,14 @@ public with sharing class ScheduleController {
 					event.id = assignment.Id;
 					event.name = assignment.Name;
 					event.link = assignment.ConferenceLink__c;
-					event.startTime = assignment.StartTime__c;
-					event.endTime = assignment.EndTime__c;
+					event.startTime = assignment.StartTime__c?.addHours(1);
+					event.endTime = assignment.EndTime__c?.addHours(1);
 					event.teacherName = assignment.Teacher__r.Name;
 					event.teacherId = assignment.Teacher__c;
 					event.type = SchemaUtils.getRecordTypeName('Assignment__c', assignment.RecordTypeId);
 					data.add(event);
 				}
 			}
-			system.debug(data);
 			return data;
 		} catch (Exception e) {
 			throw new AuraHandledException(e.getMessage());

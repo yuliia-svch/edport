@@ -26,11 +26,12 @@ public class ScheduleControllerTest {
 			'Name' => 'Assignment 1',
 			'Course__c' => course.Id,
 			'Teacher__c' => teacher.ContactId,
+			'Maximum_Score__c' => 4,
 			'StartTime__c' => datetime.now(),
 			'EndTime__c' => datetime.now().addHours(1)
 		});
 		System.runAs(student) {
-			List<Models.Event> events = ScheduleController.getScheduleData();
+			List<Models.Event> events = ScheduleController.getScheduleData('Student');
 			Assert.areEqual(2, events.size());
 		}
 	}
