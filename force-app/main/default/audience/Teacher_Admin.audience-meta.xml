@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Audience xmlns="http://soap.sforce.com/2006/04/metadata">
+    <audienceName>Teacher + Admin</audienceName>
+    <container>Virtual Educational Portal</container>
+    <criteria>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <profile>admin</profile>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>Profile</type>
+        </criterion>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <profile>educational portal - teacher</profile>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>Profile</type>
+        </criterion>
+    </criteria>
+    <formulaFilterType>AnyCriterionMatches</formulaFilterType>
+    <isDefaultAudience>false</isDefaultAudience>
+    <targets>
+        <target>
+            <groupName>1970c5b0-3a5d-46ce-88b8-fa84df2e64e9$#$a1b446c2-f8e3-4725-b53e-624d31b227a0</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>schedule_Schedule_Component</targetValue>
+        </target>
+        <target>
+            <groupName>42a2ec8c-b366-4d0d-8910-ea21aa361a06$#$916c1b59-236b-48db-9f8e-7db35ed36f09</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Home_Create_Record_Button_Component</targetValue>
+        </target>
+        <target>
+            <groupName>42a2ec8c-b366-4d0d-8910-ea21aa361a06$#$442ee61b-e2a3-4b4f-af1f-4291b64dbdda</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Home_Create_Record_Button_2_Component</targetValue>
+        </target>
+        <target>
+            <groupName>42a2ec8c-b366-4d0d-8910-ea21aa361a06$#$fa97e709-e2f0-45d7-bff8-d6a7397235b6</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Home_Create_Record_Button_1_Component</targetValue>
+        </target>
+        <target>
+            <groupName>8dd7a8b4-f9ee-4f6f-8105-e68e47c7effd$#$9406e923-f697-4204-811b-ca8f1e8a6f73</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Assignment_List_Record_List_Component</targetValue>
+        </target>
+        <target>
+            <groupName>1f85b38b-7ca7-49ec-bd51-ad08bd3e0fbb$#$530cf2ca-492d-415e-8266-cc0c58392f8c</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Lecture_List_Record_List_1_Component</targetValue>
+        </target>
+    </targets>
+</Audience>
